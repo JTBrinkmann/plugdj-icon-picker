@@ -18,3 +18,7 @@ If you don't get any popup, check the URL bar for any popup blocking warnings. C
 If you get a blank popup, close it and try again.
 
 The logos at the bottom don't work because they are not "icons".
+
+
+## Screenshot
+![plugdj-icon-picker screenshot](https://cloud.githubusercontent.com/assets/1379744/16560990/0a5e3316-41f7-11e6-9001-f27c6b8bd962.png)
