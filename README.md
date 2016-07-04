@@ -3,7 +3,7 @@ A small utility to open a popup with the plug.dj icons and help you find their C
 
 
 ## Usage
-Create a bookmark with the following address (on Chrome you can just select the text and drag'n'drop it to your bookmarks bar)
+Create a bookmark with the following address (on Chrome and Firefox you can just select the text and drag'n'drop it to your bookmarks bar)
 ```js
 javascript:$.getScript('https://rawgit.com/JTBrinkmann/plugdj-icon-picker/master/plugdj-icon-picker.js');void(8)
 ```
