@@ -1,8 +1,8 @@
 // get URL to plug's CSS file
 var cssURL;
 cssURL = $('link').filter(function(arg$, el){
-  return /app\.\w*?\.css/.test(el.href);
-})[0].href;
+  return /app\..*css$/.test(el.href);
+})[0].href
 
 // load CSS file's contents
 $.get(cssURL).then(function(cssData){ // done loading
@@ -34,7 +34,7 @@ $.get(cssURL).then(function(cssData){ // done loading
   setTimeout(function(){
 
     // display icons in popup and format the className text
-    icons.document.body.style = "color: #fff; background: #222 url(" + /https:\/\/[^"]+\/icons\.\w+\.png/.exec(cssData)[0] + ") no-repeat; display: flex; align-items: flex-end; margin:0; height: 100%; font-family: sans-serif; cursor: pointer";
+    icons.document.body.style = "color: #fff; background: #222 url(" + /https:\/\/[^"]+\/icons\.[0-9|A-f|-]+\.png/.exec(cssData)[0] + ") no-repeat; display: flex; align-items: flex-end; margin:0; height: 100%; font-family: sans-serif; cursor: pointer";
 
     // when moving the mouse, check which icon is hovered
     icons.document.body.onmousemove = function(e){
