@@ -2,7 +2,7 @@
 var cssURL;
 cssURL = $('link').filter(function(arg$, el){
   return /app\..*css$/.test(el.href);
-})[0].href
+})[0].href;
 
 // load CSS file's contents
 $.get(cssURL).then(function(cssData){ // done loading
